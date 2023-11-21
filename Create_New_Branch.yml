@@ -1,4 +1,4 @@
-name: Template_Name
+name: Create_New_Branch
 
 permissions:
   contents: write
@@ -6,16 +6,15 @@ permissions:
 
 on: 
   workflow_dispatch:
-  schedule:
-    - cron: '35 16 * * *'
 
 jobs:
-  template_name:
+  create_new_branch:
     runs-on: ubuntu-latest
     steps:
       - name: create-new-branch
         uses: gendloop/create-new-branch@main
         with: 
-          token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
+          ref_branch: 'main'
+          branch: 'dev'
 
       
