@@ -13,8 +13,8 @@ jobs:
   template_name:
     runs-on: ubuntu-latest
     steps:
-      - name: template-name
-        uses: gendloop/template-name@main
+      - name: create-new-branch
+        uses: gendloop/create-new-branch@main
         with: 
           token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
 
