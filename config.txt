@@ -1,0 +1,5 @@
+
+PROJECT_NAME=create-new-branch
+create-new-branch_VERSION_MAJOR=1
+create-new-branch_VERSION_MINOR=0
+create-new-branch_VERSION_PATCH=0
