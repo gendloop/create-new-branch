@@ -26,4 +26,4 @@ runs:
         git checkout ${{ inputs.ref_branch }}
         git pull
         (git checkout -b ${{ inputs.branch }}) || true
-        (git push -u origin $${{ inputs.branch }}) || true
+        (git push -u origin ${{ inputs.branch }}) || true
