@@ -4,7 +4,7 @@ permissions:
   contents: write
   actions: write
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: create-new-branch
         uses: gendloop/create-new-branch@v1.0.1
-        with: 
+        with:
           ref_branch: 'main'
           branch: 'dev'
-
-      

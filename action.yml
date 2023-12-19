@@ -16,7 +16,7 @@ runs:
   steps:
     - name: checkout-repo
       uses: actions/checkout@v3
-    
+
     - name: create-new-branch
       shell: bash
       working-directory: ${{ github.workspace }}
